@@ -51,6 +51,9 @@ function renderAvatar(user) {
         $('.layui-nav-img').hide();
         $('.text-avatar').html(name[0].toUpperCase()).show();
     }
+}
 
-
+function setNavSelected(origin, current) {
+    $(origin).addClass('layui-this');
+    $(current).removeClass('layui-this');
 }
